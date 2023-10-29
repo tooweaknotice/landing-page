@@ -1,7 +1,18 @@
 body {
   display: flex;
+  margin: 0px;
   flex-direction: column;
   background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, h1, h2, p {
+margin: 0;
+padding: 0;
+}
+
+.hero, .info, .quote {
+  flex: 1 400px;
 }
 
 ul {
@@ -14,25 +25,148 @@ a {
   text-decoration: none;
 }
 
-.header {
-  display: flex;
+button, .sign-up-wrapper {
+  background-color: #3882f6;
+  color: white;
 }
 
-.hero {
+button {
+  border: 2px solid white;
+  padding: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+}
+
+.header, .footer, .hero {
+  background-color: #1F2937;
+}
+
+.header {
   display: flex;
+  justify-content: space-between;
 }
 
 .quote {
   display: flex;
+  background-color: #e5e7eb;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
 }
 
 .info-cards {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-header, .quote > * {
+  color: #1f2937;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0;
+}
+
+.card > img {
+  border: 3px solid #1f2937;;
+  border-radius: 15px;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+}
+
+.quote-author {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: bolder;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo, .hero-title {
+  color: #F9FAF8;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 150px;
+}
+
+.hero-left, .hero-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  gap: 15px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-caption, .header-links > li > a {
+  color: #e5e7eb;
+  size: 18px;
+}
+
+.header-links {
+  display: flex;
+  gap: 13px;
+}
+
+.sign-up-wrapper {
+  display: flex;
+  margin: 100px 150px;
+  padding: 40px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.sign-up-title {
+  font-weight: bold;
+  font-size: 20px;
 }
