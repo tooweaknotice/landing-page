@@ -65,6 +65,7 @@ button {
 
 .info-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -92,7 +93,7 @@ button {
 .quote-wrapper {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  max-width: 600px;
 }
 
 .quote-text {
@@ -127,18 +128,22 @@ button {
 
 .hero {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 60px;
   justify-content: center;
   align-items: center;
   padding: 50px 150px;
 }
 
-.hero-left, .hero-right {
+.hero-left {
   display: flex;
   flex-direction: column;
   flex: 1 1;
   gap: 15px;
+}
+
+.hero-right {
+  flex: 1;
 }
 
 .hero-title {
